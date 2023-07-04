@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "mini_f3.mixins.json",
+    "mini_f3-common.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "mini_f3",
+    "version": "${version}",
+    "metadata": {
+      "name": "Mini F3",
+      "description": "Shows a mini debug menu",
+      "contributors": {
+        "MrMelon54": "Owner"
+      },
+      "contact": {
+        "homepage": "https://mrmelon54.com/minecraft/mini-f3",
+        "sources": "https://github.com/MrMelon54/mini_f3",
+        "issues": "https://github.com/MrMelon54/mini_f3/issues"
+      },
+      "license": "GPL-3.0-only",
+      "icon": "icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "com.mrmelon54.MiniF3.quilt.MiniF3Quilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.20"
+      },
+      {
+        "id": "architectury",
+        "version": ">=9.0.0"
+      }
+    ]
+  },
+  "minecraft": {
+    "environment": "*"
+  }
+}

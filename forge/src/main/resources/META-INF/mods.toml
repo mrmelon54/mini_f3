@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[46,)"
+issueTrackerURL = "https://github.com/MrMelon54/mini_f3/issues"
+license = "GPL-3.0-only"
+
+[[mods]]
+modId = "mini_f3"
+version = "${version}"
+displayName = "Mini F3"
+authors = "MrMelon54"
+description = "Shows a mini debug menu"
+logoFile = "/icon.png"
+
+[[dependencies.mini_f3]]
+modId = "forge"
+mandatory = true
+versionRange = "[46,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mini_f3]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mini_f3]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.0.0,)"
+ordering = "AFTER"
+side = "BOTH"

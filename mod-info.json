@@ -1,0 +1,10 @@
+{
+  "modid": "mini_f3",
+  "modname": "Mini F3",
+  "modclass": "MiniF3",
+  "modgroup": "com.mrmelon54.MiniF3",
+  "moddesc": "Shows a mini debug menu",
+  "modwebsite": "https://mrmelon54.com/minecraft/mini-f3",
+  "modsource": "https://github.com/MrMelon54/mini_f3",
+  "modissue": "https://github.com/MrMelon54/mini_f3/issues"
+}

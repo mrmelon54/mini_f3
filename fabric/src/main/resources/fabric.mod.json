@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mini_f3",
+  "version": "${version}",
+  "name": "Mini F3",
+  "description": "Shows a mini debug menu",
+  "authors": [
+    "MrMelon54"
+  ],
+  "contact": {
+    "homepage": "https://mrmelon54.com/minecraft/mini-f3",
+    "sources": "https://github.com/MrMelon54/mini_f3",
+    "issues": "https://github.com/MrMelon54/mini_f3/issues"
+  },
+  "license": "GPL-3.0-only",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mrmelon54.MiniF3.fabric.MiniF3Fabric"
+    ]
+  },
+  "mixins": [
+    "mini_f3.mixins.json",
+    "mini_f3-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20",
+    "architectury": ">=9.0.0"
+  }
+}
