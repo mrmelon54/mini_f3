@@ -20,7 +20,8 @@ public class MiniHud {
             String a = String.format(Locale.ROOT, "Block: %d %d %d", pos.getX(), pos.getY(), pos.getZ());
             if (MiniF3.isShowRotationData()) {
                 a += String.format(Locale.ROOT, " | (%.1f / %.1f)", Mth.wrapDegrees(cameraEntity.getYRot()), Mth.wrapDegrees(cameraEntity.getXRot()));
-                if (mc.level != null) a += " | " + mc.levelRenderer.getEntityStatistics();
+                if (mc.level != null)
+                    a += String.format(" | E: %d/%d", mc.levelRenderer.renderedEntities, mc.level.getEntityCount());
             }
             l.add(a);
         }
