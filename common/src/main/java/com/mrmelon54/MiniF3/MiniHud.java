@@ -25,6 +25,6 @@ public class MiniHud {
             l.add(a);
         }
 
-        new DebugScreenOverlay(mc).renderLines(guiGraphics, l, false);
+        new DebugScreenOverlay(mc).renderLines(guiGraphics, l, true);
     }
 }
